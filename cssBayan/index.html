@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meme Accordion</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                background: cornsilk;
+            }
+
+            .accordionframe {
+                display: block;
+                text-align: center;
+
+            }
+            .accordion {
+                background-color: #d6cb51;
+                color: #000000;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                text-align: left;
+                border: none;
+                outline: none;
+                transition: 0.4s;
+                border-radius: 10px;
+                width: 70%;
+                font-family: 'Lilita One', cursive;
+            }
+            .active,
+            .accordion:hover {
+                background-color: #f7ffc4;
+            }
+
+            .panel {
+                padding: 0 18px;
+                background-color: white;
+                display: none;
+                overflow: hidden;
+            }
+            .accordion:after {
+                content: '\02795'; /* "plus" sign (+) */
+                font-size: 13px;
+                color: cornsilk;
+                float: right;
+                margin-left: 5px;
+            }
+            .active:after {
+                content: "\2796"; /* "minus" sign (-) */
+            }
+            h1,
+            p {
+                text-align: center;
+                font-family: 'Lilita One', cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Bayan</h1>
+        <div class="accordionframe">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">Section 4</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            <button class="accordion">Section 5</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+        </div>
+    </body>
+</html>
